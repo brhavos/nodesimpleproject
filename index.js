@@ -3,10 +3,10 @@ const app = express();
 
 app.get('/', (req, res) => {
   const name = process.env.NAME || 'World';
-  res.send(`Node - Simple Project - Hello ${name}!`);
+  res.send('Node - Simple Project - Hello ${name}!');
 });
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => {
-  console.log(`helloworld: listening on port ${port}`);
+  console.log('helloworld: listening on port ${port}');
 });
